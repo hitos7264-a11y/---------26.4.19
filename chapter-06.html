@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>第6章 LTO磁気テープの再評価 ｜ 記憶媒体の価格動向 2026年4月19日</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div data-shell-header></div>
+<div data-shell-drawer></div>
+
+<main>
+  <section class="article-hero">
+    <div class="container">
+      <a href="chapters.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        本編 一覧へ戻る
+      </a>
+      <div class="article-num">CHAPTER 06 · MAIN</div>
+      <h1 class="article-title">磁気テープLTOの再評価<br>── NANDの代替として静かに存在感</h1>
+      <p class="article-lead">
+        一世代昔に見えたLTO（Linear Tape-Open）磁気テープが、AI時代の価格混乱の中で存在感を増している。SSDが暴騰したおかげで、磁気テープが最も将来性のあるストレージ市場に返り咲いた ── そんな冗談が半分以上本気として語られている。
+      </p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="container">
+
+      <h3>LTO世代別の容量と価格</h3>
+      <table class="data-table">
+        <thead><tr><th>世代</th><th>ネイティブ容量</th><th>テープ単価</th><th>1TBあたり</th></tr></thead>
+        <tbody>
+          <tr><td>LTO-10</td><td class="num">30〜40TB</td><td class="num">$260〜300</td><td class="num">$3〜4</td></tr>
+          <tr><td>LTO-9</td><td class="num">18TB</td><td class="num">$85〜100</td><td class="num">≈$5</td></tr>
+          <tr><td>LTO-8</td><td class="num">12TB</td><td class="num">$60〜70</td><td class="num">≈$5.5</td></tr>
+          <tr><td>LTO-7</td><td class="num">6TB</td><td class="num">$55〜65</td><td class="num">≈$10</td></tr>
+          <tr><td>LTO-6</td><td class="num">2.5TB</td><td class="num">$30〜45</td><td class="num">≈$15</td></tr>
+        </tbody>
+      </table>
+
+      <p>1TBあたりのネイティブ媒体コストはLTO-9で約$5、<strong>LTO-10は量産効果が高まるにつれ$3〜4台</strong>へ向かっている。同時期の30TB TLCエンタープライズSSDの単価がペタバイト換算で桁違いに高いことを考えれば、コールドデータ用途では<em>LTOの圧勝</em>である。</p>
+
+      <h3>ドライブは高い ── が、数百TB規模で逆転</h3>
+      <table class="data-table">
+        <tbody>
+          <tr><td>LTO-10 内蔵/モジュール型</td><td class="num">$9,000〜$12,000</td></tr>
+          <tr><td>LTO-10 外付け/テーブルトップ型</td><td class="num">$11,000〜$16,000</td></tr>
+          <tr><td>LTO-9 ドライブ</td><td class="num">$4,500〜$8,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>導入ハードルは決して低くないが、数百TB規模の長期アーカイブ需要に対しては<em>ペタバイト単価で見たときに圧倒的に有利</em>。コールドデータをLTOに退避させれば、AI学習用データのライブ部分だけをSSD/HDDに残せるため、総コストを大幅に圧縮できる。</p>
+
+      <h3>値上がりは「穏やか」な優位</h3>
+      <div class="quote-card">
+        <p class="quote-text">LTO-10のカートリッジ価格は$275〜$315前後で、以前の世代の2倍を超えている。しかしNAND/HDDほどの凄まじい急騰ではなく、穏やかなコスト上昇にとどまっている。</p>
+        <div class="quote-author">― TechRadar</div>
+      </div>
+
+      <p>相対的優位性が目立ってきた証左でもある。とりわけIBMやHPE、Quantum、Fujifilmといった<strong>LTO陣営</strong>にとっては、AI時代が思わぬ追い風になりうる。</p>
+
+      <h3>富士フイルム・IBMが媒体生産を数倍へ</h3>
+      <p>IBMと富士フイルム（LTO規格の中核メンバー）は2026年にかけてLTO-10媒体の生産を<em>数倍に引き上げる計画</em>を公表しており、大手クラウド事業者やハイパースケーラーがLTO-10ドライブの大規模導入を進めている。「速度階層のSSD」と「容量階層のLTO」という二極化が、AI時代のストレージアーキテクチャの標準形になりつつある。</p>
+
+      <div class="alert-banner">
+        <div class="label">▶ INSIGHT</div>
+        AI時代のデータ爆発は、速度階層（ホット層）と容量階層（コールド層）の両極化を極端に推し進め、中間層（従来の1TB SSDや8TB HDDの領域）を溶かしていく構造になっている。LTOはその「容量階層」で最も経済合理性の高い媒体として返り咲いた。
+      </div>
+
+      <div class="callout">
+        <div class="callout-title">▶ この章の要点</div>
+        <ul>
+          <li>LTO-10は30〜40TB、テープ単価$260〜$300</li>
+          <li>1TBあたりLTO-10で$3〜4 ── SSDの桁違いに安い</li>
+          <li>ドライブは$9,000〜$16,000、数百TB規模から回収可能</li>
+          <li>値上がりが穏やかなため相対優位が際立つ</li>
+          <li>IBM・富士フイルムが媒体生産を数倍に拡大</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <nav class="chapter-nav">
+    <a href="chapter-05.html" class="chap-nav-btn">
+      <span class="dir">◀ PREV</span>
+      <span class="t">第5章 Blu-ray終焉</span>
+    </a>
+    <a href="chapter-07.html" class="chap-nav-btn next">
+      <span class="dir">NEXT ▶</span>
+      <span class="t">第7章 カード消滅事件</span>
+    </a>
+  </nav>
+
+  <div data-shell-footer></div>
+</main>
+
+<div data-shell-nav></div>
+
+<script src="js/shell.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

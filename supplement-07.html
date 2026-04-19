@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>補章7 AIデータセンター電力危機 ｜ 記憶媒体の価格動向 2026年4月19日</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div data-shell-header></div>
+<div data-shell-drawer></div>
+
+<main>
+  <section class="article-hero">
+    <div class="container">
+      <a href="supplements.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        追補版 一覧へ戻る
+      </a>
+      <div class="article-num sup">SUPPLEMENT 07 · 死角</div>
+      <h1 class="article-title">AIデータセンター電力危機と<br>「メモリ生産の70%独占」問題</h1>
+      <p class="article-lead">
+        2026年に製造されるメモリチップの約70%がデータセンター向けに消費される。電力危機は供給緩和要因ではなく、むしろ価格上昇の増幅装置として働く。
+      </p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="container">
+
+      <h3>電力消費の爆発</h3>
+      <div class="fact-grid">
+        <div class="fact-pill"><div class="k">世界DC電力 2025</div><div class="v">+17%<small style="display:block;">IEA発表</small></div></div>
+        <div class="fact-pill"><div class="k">米国DC電力 2023</div><div class="v">176 TWh<small style="display:block;">全米の4.4%</small></div></div>
+        <div class="fact-pill"><div class="k">2030 世界電力増</div><div class="v">+1兆kWh/年<small style="display:block;">モルガンS試算</small></div></div>
+        <div class="fact-pill"><div class="k">比較</div><div class="v">ドイツ1国超<small style="display:block;">年間消費量</small></div></div>
+      </div>
+
+      <p>国際エネルギー機関（IEA）の2026年発表によれば、世界のデータセンターの電力消費は2025年に前年比<strong>+17%</strong>増加し、AI特化型データセンターの伸び率はそれをさらに上回った。モルガン・スタンレーの試算では、AIが主因となって世界の電力需要は2030年までに<em>年間1兆kWh以上</em>増えるという。これはドイツ1国の年間電力消費量を超える規模だ。</p>
+
+      <h3>電力増 × メモリ需要：因果関係</h3>
+      <p>この電力増加とメモリ需要は、単なる相関ではなく因果関係にある。生成AIの大規模言語モデル（GPT系、Llama系、Claude系など）は、</p>
+      <ul>
+        <li>推論1回あたりに数十GB〜数百GBのモデルパラメータを<strong>HBM</strong>から読み出し</li>
+        <li>さらに「コンテキストキャッシュ」（過去の会話を覚えておく領域）として数GB〜数十GBの<strong>DRAM</strong>を消費</li>
+      </ul>
+      <p>モデルが大きくなればHBMが増え、ユーザーが増えればDRAMが増え、学習データが増えればSSDとHDDが増える。つまり<em>AIの利用が伸びる限り、メモリとストレージの全階層が比例以上のペースで肥大する</em>。</p>
+
+      <h3>2026年：メモリの70%がデータセンター向け</h3>
+      <table class="data-table">
+        <thead><tr><th>年</th><th>データセンター向け比率</th></tr></thead>
+        <tbody>
+          <tr><td>2023</td><td class="num">40%</td></tr>
+          <tr><td>2024</td><td class="num">50%</td></tr>
+          <tr><td>2026</td><td class="num up">70%</td></tr>
+        </tbody>
+      </table>
+
+      <div class="alert-banner">
+        <div class="label">⚠ 残り30%の争奪戦</div>
+        残る30%を、<strong>スマートフォン、PC、ゲーム機、車載、産業機器、カメラ、メモリーカード</strong>などすべてが奪い合う構造になった。本編が描いた「消費者向けは残り物を奪い合っている」という構図は、数字の上でもまさに正確である。
+      </div>
+
+      <h3>電力危機は「緩和」ではなく「増幅装置」</h3>
+      <p>電力危機はもう一つの副作用を生む。データセンターの建設が電力インフラの制約で遅延すると、ハイパースケーラーは<em>「建てられなかったデータセンター分のメモリ発注をキャンセル」するのではなく</em>、「既存データセンターの密度を上げるために追加発注」する傾向にある。</p>
+
+      <p>これは以下の形で現れる：</p>
+      <ul>
+        <li>GPUあたりのHBM搭載量を増やす（HBM3の8スタック → HBM4の16スタック）</li>
+        <li>ノードあたりのDRAM容量を増やす（1TB → 2TB、4TB）</li>
+        <li>サーバーあたりのSSD容量を増やす（30TB → 122TB）</li>
+      </ul>
+
+      <div class="alert-banner">
+        <div class="label">▶ 結論</div>
+        電力危機はストレージ危機の緩和要因ではなく、むしろ<strong>増幅装置</strong>として機能している。「電力が足りない」と「メモリが足りない」は、AI時代においては<em>同じ問題の別の側面</em>である。
+      </div>
+
+      <h3>データセンター立地の地殻変動</h3>
+      <p>米国ヴァージニア州アシュバーン、オレゴン州プラインヴィル、アイルランド、シンガポール、日本（印西市・石狩市）など、従来のハイパースケール拠点は電力逼迫で新設に制限がかかり始めている。ハイパースケーラーは原子力発電所に直結するSMR（小型モジュール炉）案や、カナダ・ノルウェー・アイスランドなど寒冷地の再生可能エネルギー豊富な地域へ移動を開始している。しかし<em>この地理的分散は新設コストを押し上げ、結果としてメモリ/ストレージの需要密度をさらに高める</em>。</p>
+
+      <div class="callout">
+        <div class="callout-title">▶ この章の要点</div>
+        <ul>
+          <li>世界DC電力 2025年+17%、2030年までに+1兆kWh/年増（モルガンS）</li>
+          <li>2026年にメモリチップの70%がデータセンター向け</li>
+          <li>残り30%をPC・スマホ・ゲーム機・車載ほかが奪い合う</li>
+          <li>電力危機はメモリ需要の増幅装置として働く</li>
+          <li>HBMスタック増、DRAM容量倍、SSD 30TB→122TBへ</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <nav class="chapter-nav">
+    <a href="supplement-06.html" class="chap-nav-btn">
+      <span class="dir">◀ PREV</span>
+      <span class="t">補章6 Silica・DNA</span>
+    </a>
+    <a href="supplement-08.html" class="chap-nav-btn next">
+      <span class="dir">NEXT ▶</span>
+      <span class="t">補章8 車載半導体</span>
+    </a>
+  </nav>
+
+  <div data-shell-footer></div>
+</main>
+
+<div data-shell-nav></div>
+
+<script src="js/shell.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

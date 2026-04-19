@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>補章1 HBMを技術レベルで解剖 ｜ 記憶媒体の価格動向 2026年4月19日</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div data-shell-header></div>
+<div data-shell-drawer></div>
+
+<main>
+  <section class="article-hero">
+    <div class="container">
+      <a href="supplements.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        追補版 一覧へ戻る
+      </a>
+      <div class="article-num sup">SUPPLEMENT 01 · 死角</div>
+      <h1 class="article-title">HBMという「全ての元凶」を<br>技術レベルで解剖する</h1>
+      <p class="article-lead">
+        HBMが同じ容量を作るのに標準DRAMの3倍のウエハ面積を消費する ── その「なぜ」を理解せずして、2026年のメモリ危機は語れない。
+      </p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="container">
+
+      <h3>HBMとは何か</h3>
+      <p>HBM（<em>High Bandwidth Memory</em>、高帯域メモリ）とは、平たく言えば「DRAMチップをビルの階層のように<strong>垂直方向へ積み重ね</strong>、それを専用の配線（TSV＝シリコン貫通電極、チップの上下をつらぬく微細な縦穴の配線）で串刺しにし、GPU（画像・AI計算用プロセッサ）のすぐ横に貼り付けた超高速メモリ」である。</p>
+
+      <p>従来のDRAMが板状に一枚ずつマザーボードへ並ぶのに対し、HBMは4層、8層、12層、そして最新のHBM4では<strong>16層</strong>までを積層する。積めば積むほど一つのパッケージに詰まる容量と、データを運ぶ<em>「帯域幅」</em>（1秒間にどれだけデータを流せるかという、道路で言えば車線数×制限速度に相当する指標）が増える。</p>
+
+      <h3>HBM4のスペック</h3>
+      <table class="data-table">
+        <thead><tr><th>指標</th><th>HBM4</th></tr></thead>
+        <tbody>
+          <tr><td>最大積層数</td><td class="num">16層</td></tr>
+          <tr><td>バス幅</td><td class="num">2,048bit（従来比2倍）</td></tr>
+          <tr><td>1パッケージ帯域</td><td class="num">2TB/秒 超</td></tr>
+          <tr><td>JEDEC正式仕様公開</td><td class="num">2025年4月</td></tr>
+          <tr><td>サムスン量産速度</td><td class="num">11.7Gbps（最大13Gbps）</td></tr>
+          <tr><td>SKハイニックス16層単一パッケージ</td><td class="num">48GB 実演</td></tr>
+        </tbody>
+      </table>
+
+      <p>これは家庭用SSDの実効速度のおよそ<em>200〜400倍</em>に相当する速度である。</p>
+
+      <h3>なぜ「3倍のウエハ」が必要なのか</h3>
+      <p>問題は、この超高速を実現する代償として、ウエハ消費が異常に増える点にある。</p>
+
+      <div class="fact-grid">
+        <div class="fact-pill"><div class="k">① ダイ面積</div><div class="v">大<small style="display:block;">通常DRAMより広い</small></div></div>
+        <div class="fact-pill"><div class="k">② TSV工程</div><div class="v">追加<small style="display:block;">リペア回路も必要</small></div></div>
+        <div class="fact-pill"><div class="k">③ 1c DRAM</div><div class="v">最先端<small style="display:block;">中核ダイ用</small></div></div>
+        <div class="fact-pill"><div class="k">④ ベースダイ</div><div class="v">4nm ロジック<small style="display:block;">別ウエハ</small></div></div>
+      </div>
+
+      <p>サムスンの場合はHBM4の中核ダイに<strong>1c DRAM</strong>と呼ばれる最先端微細化プロセスを使い、さらにロジック回路を<strong>4nm</strong>（ナノメートル、髪の毛の太さの約2万分の1）で別途製造してベースダイ（土台となる制御用チップ）に組み込むため、<em>ウエハ2種類を消費</em>する。これらを合計すると、同じビット数の標準DRAMを作るのに比べて<strong>約3倍のウエハ面積</strong>が必要となる計算だ。</p>
+
+      <h3>HBM市場規模（訂正反映）</h3>
+      <div class="alert-banner">
+        <div class="label">⚠ 訂正反映</div>
+        本編・追補版で数値の揺れがあったHBM市場規模は、Bank of America予想に整合する <strong>「2025年 約$35B → 2026年 約$54.6B（前年比 +58%）」</strong> に本サイト内で統一。Micron見通し（2025年約$35B／2028年約$100B）とも整合。
+      </div>
+
+      <h3>汎用DRAMを削ってでもHBMへ</h3>
+      <p>サムスンは平沢（ピョンテク）のP4ファブでHBMキャパシティを2026年に<strong>前年比+50〜70%</strong>増強し、月産<strong>12万枚</strong>のDRAMウエハ増設を計画。SKハイニックスは清州（チョンジュ）のM15Xファブを前倒しで2026年2月に1b DRAM量産に移行させ、月産最大<strong>9万枚</strong>の12インチウエハ追加を見込む。</p>
+
+      <div class="alert-banner">
+        <div class="label">▶ 本質</div>
+        これらの巨額投資は、<strong>すべて汎用DRAMを削ってでもHBMへ回す</strong>という方向へ揃っている。本編が語った「意図的な供給抑制」の技術的な正体こそ、この<em>「HBMがウエハを3倍食う」</em>という物理的現実なのである。
+      </div>
+
+      <h3>帯域幅 vs 容量</h3>
+      <p>HBM4の1パッケージ帯域2TB/sという数字は、現代のAI学習にとって死活的に重要。GPT系やClaude系の大規模言語モデルは数百GBのパラメータをGPUメモリへ高速ロードする必要があり、<em>「帯域こそが計算速度を決める」</em>時代になった。Nvidia H100・H200・B100・B200、AMD MI300X・MI325X、Google TPUといったAIアクセラレータは、いずれもHBMを搭載することで演算ユニットの能力を引き出している。</p>
+
+      <div class="callout">
+        <div class="callout-title">▶ この章の要点</div>
+        <ul>
+          <li>HBMはDRAMを最大16層垂直積層＋TSV貫通配線</li>
+          <li>HBM4はバス幅2,048bit、2TB/秒の帯域</li>
+          <li>標準DRAMの約3倍のウエハ面積を消費（1c DRAM+4nmベースダイ）</li>
+          <li>HBM市場規模：2025年$35B → 2026年$54.6B（+58%、訂正反映）</li>
+          <li>サムスン/SKハイニックスは汎用DRAMを削ってHBMへシフト</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <nav class="chapter-nav">
+    <a href="supplements.html" class="chap-nav-btn">
+      <span class="dir">◀ BACK</span>
+      <span class="t">追補 一覧へ</span>
+    </a>
+    <a href="supplement-02.html" class="chap-nav-btn next">
+      <span class="dir">NEXT ▶</span>
+      <span class="t">補章2 中国勢CXMT・YMTC</span>
+    </a>
+  </nav>
+
+  <div data-shell-footer></div>
+</main>
+
+<div data-shell-nav></div>
+
+<script src="js/shell.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

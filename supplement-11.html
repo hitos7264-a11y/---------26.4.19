@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>補章11 中古市場と42%データ漏洩 ｜ 記憶媒体の価格動向 2026年4月19日</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div data-shell-header></div>
+<div data-shell-drawer></div>
+
+<main>
+  <section class="article-hero">
+    <div class="container">
+      <a href="supplements.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        追補版 一覧へ戻る
+      </a>
+      <div class="article-num sup">SUPPLEMENT 11 · 死角</div>
+      <h1 class="article-title">中古市場の活況と<br>「42%に復元可能データ」問題</h1>
+      <p class="article-lead">
+        新品価格が3〜5倍になれば、消費者は中古に流れる。しかし、中古ストレージには深刻なデータ漏洩リスクが潜んでいる。
+      </p>
+    </div>
+  </section>
+
+  <section class="article-body">
+    <div class="container">
+
+      <h3>Blancco／Ontrack 調査（訂正反映）</h3>
+      <div class="alert-banner">
+        <div class="label">⚠ 訂正反映 · 調査実施年</div>
+        追補版原文は「2025年（Blancco調査実施）」としていたが、実際は<strong>2018年9月〜10月にeBayで購入した159台のドライブを2019年初頭にOntrackが分析した調査（2019年4月公表）</strong>。「2019年調査」が正しい。本サイトでは訂正反映済み。
+      </div>
+
+      <p>データ消去専門企業<strong>Blancco Technology Group</strong>がデータ復元専門企業<strong>Ontrack</strong>と実施した2019年の調査では、オンラインマーケットプレイス（eBay、メルカリ、ヤフオク等）で購入した使用済みストレージドライブのうち、<strong>42%から復元可能な機密データが検出</strong>された。</p>
+
+      <table class="data-table">
+        <thead><tr><th>項目</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td>購入時期</td><td class="num">2018年9〜10月</td></tr>
+          <tr><td>購入台数</td><td class="num">159台</td></tr>
+          <tr><td>分析実施</td><td class="num">2019年初頭（Ontrack）</td></tr>
+          <tr><td>公表時期</td><td class="num">2019年4月</td></tr>
+          <tr><td>復元可能</td><td class="num up">42%</td></tr>
+        </tbody>
+      </table>
+
+      <p>内容は業務メール、顧客名簿、クレジットカード番号、医療記録、パスワード、社内機密文書など多岐にわたる。なお、<em>同社は以前にも類似の調査を行っており、そのときの検出率は35%程度だった</em>。</p>
+
+      <h3>原因：「フォーマットすれば消える」は誤解</h3>
+      <p>原因は単純で、<em>「フォーマットすれば消える」という誤解が広く定着している</em>ためだ。通常のフォーマット（クイックフォーマット）は<strong>ファイルシステムの目次ページを白紙にするだけ</strong>で、実データは物理セクタにそのまま残る。専用の復元ソフト（例：<strong>PhotoRec、Recuva、R-Studio</strong>）を使えば、数時間で膨大な量のファイルが蘇る。</p>
+
+      <h3>SSDはさらに複雑</h3>
+      <div class="callout warn">
+        <div class="callout-title">▶ SSDの特殊事情</div>
+        SSDの場合は話がさらに複雑で、<strong>ウェアレベリング</strong>（書き込み回数を均等化するためにデータを物理的に移動させる仕組み）やオーバープロビジョニング（予備領域）の存在により、<em>論理的に「削除」したはずのデータが物理セルに残留し続けるケース</em>がある。完全消去には<strong>Secure Eraseコマンド</strong>や<strong>Crypto Erase</strong>（暗号化ストレージの鍵を破棄する方法）が必要だが、一般消費者はまずこれを行わない。
+      </div>
+
+      <h3>2026年スーパーサイクルが問題を深刻化</h3>
+      <h4>要因①：廃棄ドライブが中古市場へ流出</h4>
+      <p>旧来なら廃棄されたであろうドライブが<em>「値段が付くから」という理由で</em>中古市場に流れる量が激増した。2TB SSDが新品$600なら、中古でも$250〜$350の値が付く。</p>
+
+      <h4>要因②：企業からの下取り増加</h4>
+      <p>企業のIT部門が中古品販売業者にまとめてドライブを下取りに出すケースが増え、<strong>サプライチェーンの各段階でデータ漏洩リスク</strong>が発生している。</p>
+
+      <h3>国内データ消去サービスの市場</h3>
+      <p>企業向けでは<strong>Blancco、Kroll Ontrack、アドバンスデザイン</strong>等の専業各社が売上を伸ばしているが、一般消費者のリテラシーには大きなギャップが残っている。本来ならば、この中古市場活況に乗じてデータ消去サービスやデータ復旧防止ソフトの市場が爆発的に伸びるべきだが、国内の消費者向け製品として目立った新興サービスはまだ少ない。</p>
+
+      <h3>消費者向け完全消去ガイド</h3>
+      <ul>
+        <li><strong>HDD：</strong> Windows標準の「ドライブのワイプ」、DBAN、全セクタ書き込みツールで上書き3回以上</li>
+        <li><strong>SSD：</strong> Samsung Magician / WD Dashboard / Crucial Storage Executive の Secure Erase機能</li>
+        <li><strong>自己暗号化ドライブ：</strong> ATA Security Erase Unit または TCG Opal準拠のCrypto Erase</li>
+        <li><strong>物理破壊：</strong> SSDはプラッタ破壊では不十分、NANDチップを金槌で粉砕するか専業に依頼</li>
+        <li><strong>売却前：</strong> 「SSD内部データが完全消去されているか」をメーカー公式ツールで確認</li>
+      </ul>
+
+      <div class="alert-banner">
+        <div class="label">⚠ 本質</div>
+        記憶媒体が「戦略物資」になるということは、そこに書き込まれる情報そのものが<strong>「流動する資産」</strong>になるということ。スーパーサイクルは情報セキュリティの新しい陰を長く落としている。
+      </div>
+
+      <div class="callout">
+        <div class="callout-title">▶ この章の要点</div>
+        <ul>
+          <li>2019年Blancco/Ontrack調査で中古ドライブの42%から機密データ復元（訂正反映）</li>
+          <li>原因は「フォーマット=消去」の誤解</li>
+          <li>SSDはウェアレベリング/オーバープロビジョニングで完全消去が困難</li>
+          <li>完全消去にはSecure Erase / Crypto Erase必須</li>
+          <li>2026年価格高騰で廃棄ドライブが市場流出、漏洩リスク拡大</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <nav class="chapter-nav">
+    <a href="supplement-10.html" class="chap-nav-btn">
+      <span class="dir">◀ PREV</span>
+      <span class="t">補章10 Chia投機</span>
+    </a>
+    <a href="supplement-12.html" class="chap-nav-btn next">
+      <span class="dir">NEXT ▶</span>
+      <span class="t">補章12 ゲーム機市場</span>
+    </a>
+  </nav>
+
+  <div data-shell-footer></div>
+</main>
+
+<div data-shell-nav></div>
+
+<script src="js/shell.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
